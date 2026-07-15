@@ -35,13 +35,23 @@ El proyecto aplica principios de modelado relacional, normalización, integridad
 
 ---
 
-## 🗄 Modelo de Base de Datos
+## 🗄️ Modelo de Base de Datos
 
-La solución está compuesta por ocho entidades normalizadas y categorizadas según su propósito en el sistema:
+La solución está compuesta por **ocho entidades** normalizadas y categorizadas estratégicamente según su propósito en el sistema:
 
-| Catálogos | Operación | Registro Histórico |
-| :--- | :--- | :--- |
-| • `PROFESION`<br>• `DEPARTAMENTO`<br>• `ESTADO_PROYECTO`<br>• `TARIFA` | • `EMPRESA_CLIENTE`<br>• `EMPLEADO`<br>• `PROYECTO` | • `DETALLE_PROYECTO` *(Registro operativo de horas trabajadas y costos históricos)* |
+### 📑 1. Catálogos (Tablas de Referencia)
+* `PROFESION` — Define las especialidades de los empleados.
+* `DEPARTAMENTO` — Estructura las áreas de la organización.
+* `ESTADO_PROYECTO` — Controla el ciclo de vida de los proyectos.
+* `TARIFA` — Almacena los costos por hora vigentes de los roles.
+
+### ⚙️ 2. Operación (Tablas Principales)
+* `EMPRESA_CLIENTE` — Registro de clientes de consultoría.
+* `EMPLEADO` — Información del personal y su jerarquía.
+* `PROYECTO` — Datos principales de los servicios contratados.
+
+### 📜 3. Registro Histórico (Tabla Transaccional)
+* `DETALLE_PROYECTO` — Registro operativo de horas trabajadas y costos históricos aplicados.
 
 ---
 
@@ -128,16 +138,15 @@ DB_EMPRESA_SOFTWARE/
 └── README.md
 ``` 
 
-🚀 Instrucciones de Ejecución
-Para desplegar la solución de forma correcta, ejecute los scripts dentro de SQL Server Management Studio (SSMS) ingresando a la carpeta database y siguiendo estrictamente 
-este orden correlativo:
+### 🚀 Instrucciones de Ejecución
+Para desplegar la solución de forma correcta, ejecute los scripts dentro de **SQL Server Management Studio (SSMS)** siguiendo estrictamente este orden correlativo (puede hacer clic en cada uno para ver el código):
 
-01_Create_Database.sql
-02_Create_Table.sql
-03_Inserts.sql
-04_Views.sql
-05_Triggers.sql
-06_Indexes.sql
-
+1. 📄 [01_Create_Database.sql](./database/01_Create_Database.sql)
+2. 📄 [02_Create_Table.sql](./database/02_Create_Table.sql)
+3. 📄 [03_Inserts.sql](./database/03_Inserts.sql)
+4. 📄 [04_Views.sql](./database/04_Views.sql)
+5. 📄 [05_Triggers.sql](./database/05_Triggers.sql)
+6. 📄 [06_Indexes.sql](./database/06_Indexes.sql)
+   
 📄 Licencia
 Proyecto desarrollado exclusivamente con fines académicos, demostrativos y de aprendizaje.
