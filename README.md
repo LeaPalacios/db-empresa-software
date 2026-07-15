@@ -141,12 +141,12 @@ DB_EMPRESA_SOFTWARE/
 ### 🚀 Instrucciones de Ejecución
 Para desplegar la solución de forma correcta, ejecute los scripts dentro de **SQL Server Management Studio (SSMS)** siguiendo estrictamente este orden correlativo (puede hacer clic en cada uno para ver el código):
 
-1. 📄 [01_Create_Database.sql](./database/01_Create_Database.sql)
-2. 📄 [02_Create_Table.sql](./database/02_Create_Table.sql)
-3. 📄 [03_Inserts.sql](./database/03_Inserts.sql)
-4. 📄 [04_Views.sql](./database/04_Views.sql)
-5. 📄 [05_Triggers.sql](./database/05_Triggers.sql)
-6. 📄 [06_Indexes.sql](./database/06_Indexes.sql)
+1. 📄 [01_Create_Database.sql](./Database/01_Create_Database.sql)
+2. 📄 [02_Create_Table.sql](./Database/02_Create_Table.sql)
+3. 📄 [03_Inserts.sql](./Database/03_Inserts.sql)
+4. 📄 [04_Views.sql](./Database/04_Views.sql)
+5. 📄 [05_Triggers.sql](./Database/05_Triggers.sql)
+6. 📄 [06_Indexes.sql](./Database/06_Indexes.sql)
    
 📄 Licencia
 Proyecto desarrollado exclusivamente con fines académicos, demostrativos y de aprendizaje.
